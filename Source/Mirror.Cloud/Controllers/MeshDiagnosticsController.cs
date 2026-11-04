@@ -188,7 +188,7 @@ public partial class CloudApiController
     }
 
     /* Which profile answers for the path, which file that is, and the payload files beside it */
-    private static BaseProfile? DescribeResolution(MeshDiagnosis diagnosis)
+    private BaseProfile? DescribeResolution(MeshDiagnosis diagnosis)
     {
         var path = diagnosis.Path;
 

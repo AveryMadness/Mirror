@@ -46,7 +46,7 @@ public partial class InfoService : ObservableObject, ILogEventSink, IService
 
         loggerConfiguration.WriteTo.Console(theme: AnsiConsoleTheme.Literate)
             .WriteTo.Sink(this)
-            .WriteTo.Sink(Core.Cloud.Objects.LogCapture.Instance)
+            .WriteTo.Sink(Mirror.Cloud.Objects.LogCapture.Instance)
             .WriteTo.File(LogFilePath);
         
         Log.Logger = loggerConfiguration.CreateLogger();
